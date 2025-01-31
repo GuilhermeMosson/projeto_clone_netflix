@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bgFilmes">
+    <div class="container-fluid">
+        <header class="row">
+            <img src="assets/Logonetflix.png" alt="logo">
+        </header>
+        <div id="caixaLogin" class="col-4 offset-4"> <!--col(tamanho da caixa) offsset(distância que ele fica da borda da tela)-->
+            <h1 class="text-white">Entrar</h1>
+            <br>
+            <form id="loginForm" onsubmit="abrirHome(event)">
+                <input type="email" class="form-control form-control-lg bg-dark border-dark text-white" placeholder="Email ou nº de telefone" required>
+                <br>
+                <div style="position: relative;">
+                    <input type="password" class="form-control form-control-lg bg-dark border-dark text-white" id="senha" placeholder="senha" required>
+                    <span onclick="showPassword()" class="key" id="keyId">🔒</span>
+                </div>
+                <br>
+                <button class="btn btn-lg btn-block btn-danger" type="submit">Entrar</button>
+                <div class="row mt-3">
+                    <div class="col text-muted">
+                        <input type="checkbox"> Lembrar de mim.
+                    </div>
+                    <div class="col text-right">
+                        <a href="#" class="text-muted">Precisa de ajuda?</a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <p class="col text-muted">Novo por aqui? <b><a href="#" class="text-white">Assine agora</a></b></p>
+                </div>
+                <div class="row mt-1">
+                    <p class="col text-muted">Esta página é protefida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

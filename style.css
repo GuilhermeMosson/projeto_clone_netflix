@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+
+body.bgFilmes{
+    background-image: url(assets/backgroundLogin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8015581232492998) 0%, rgba(0,0,0,0.5018382352941176) 50%, rgba(0,0,0,0) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+header img{
+    width: 125px;
+}
+
+.btn-custom-white{
+    background-color: white;
+}
+
+.btn-custom-translucent{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-custom-white:hover{
+    opacity: 0.8;
+}
+
+.btn-custom-translucent:hover{
+    opacity: 0.8;
+
+}
+
+.btn-custom-round{
+    padding: 5px 9px !important;
+}
+
+.opacity-50{
+    opacity: 0.6;
+}
+
+#caixaLogin{
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.key{
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+
+/*HOME*/
+.menuList{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.menuList li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menuList a{
+    color: white;
+    z-index: 12;
+}
+
+.menuList a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#hero{
+    height: 700px;
+    background-image: url(assets/breaking-bad-capa-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#hero::after{ /*cria novo objeto no HTML pelo CSS, embaixo hero*/
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: rgb(15,15,15);
+    background: linear-gradient(0deg, rgba(15,15,15,1) 0%, rgba(15,15,15,0.5046393557422969) 50%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(700px - 350px);
+}
+
+#heroInfo{
+    padding: 0;
+    margin-left: -50px;
+    margin-top: 160px;
+    z-index: 3;
+    position: relative;
+}
+
+#heroInfo img.logo{
+    margin-bottom: 50px;
+    width: 600px;
+}
+
+#heroInfo h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.main-content{
+    margin-top: 700px;
+}
+
+section{
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover{
+    z-index: 9;
+}
+
+.filmeLista{
+    overflow-x: scroll;
+    list-style: none;
+    padding: 20px 0;
+    white-space: nowrap;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.filmeLista::-webkit-scrollbar{
+    display: none;
+}
+
+.filme{
+    display: inline-block;
+    width: 250px;
+    margin-right: 3px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 2px solid transparent;
+    overflow-y: hidden;
+}
+
+.filme img{
+    max-height: 140px;
+}
+
+.filme:hover{
+    cursor:pointer;
+    transform: scale(1.2);
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.filme:hover .filmeInfo{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.filme:first-child{
+    margin-left: 70px;
+}
+
+.filmeInfo{
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.filmeInfo .col-12{
+    margin-top: 5px;
+}
+
+.filmeInfo .col-12:first-child{
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.filmeInfo p{
+    color: #7E7B7B;
+    font-size: 13px;
+}
+
+.filmeInfo p text{
+    color: #fff;
+    font-size: 10px;
+}
+
+/*MODAL*/
+.modal-dialog, .modal-content{
+    background-color: #171717;
+}
+
+.modal-dialog{
+    max-width: 600px;
+}
+
+.modal-hero{
+    height: 300px;
+    background-image: url(assets/breaking-bad-capa-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.modal-hero::after{
+    content: '';
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(23,23,23,1) 8%, rgba(23,23,23,0.5998774509803921) 20%, rgba(23,23,23,0) 30%);
+    position: absolute;
+    left: 0;
+    margin-top: -70px;
+}
+
+.logoModal{
+    width: 250px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.modal-hero-infos{
+    z-index: 2;
+}
+
+.modal-hero-infos button:first-child{
+    margin-right: 20px;
+}
+
+.filmeInfo p{
+    color: #7E7B7B;
+    font-size: 13px;
+}
+
+.filmeInfo p text{
+    color: #fff;
+    font-size: 10px;
+}
+
+.descricao{
+    color: #ffff;
+    font-size: 14px;
+}
+
+.elenco{
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 12px;
+}
+
+.elenco text{
+    color: #fff;
+}
+
+#lista_eps{
+    list-style: none;
+    padding: 0;
+}
+
+
+#lista_eps li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);   
+}
+
+#lista_eps li{
+    padding: 20px;
+}
+
+#lista_eps li p{
+    font-size: 12px;
+}

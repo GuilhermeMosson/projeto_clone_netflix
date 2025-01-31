@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>    
+</head>
+<body>
+
+    <div class="modal fade" id="modal-filme">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero">
+                    <img src="assets/breakingBad-logo.png" class="logoModal">
+                    <div class="col-12 modal-hero-infos">
+                        <button class="btn btn-custom-white"><img src="assets/play_arrow.png" width="20px" style="margin-bottom: 2.5px;"> Assistir</button>
+                        <a href="#" class="btn-custom-round border-white btn rounded-circle">
+                            <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                        </a>
+                        <a href="#" class="btn-custom-round border-white btn rounded-circle">
+                            <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <p class="descricao">O professor de química Walter White não acredita que sua vida possa piorar ainda mais. 
+                                Quando descobre que tem câncer terminal, Walter decide arriscar tudo.</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="elenco">
+                                    Elenco: <text>Bryan Cranston, Aaron Paul, Anna Gunn, mais</text><br>
+                                    <br>
+                                    Gêneros: <text>Séries dramáticas, Séries dos EUA, Suspence para TV</text><br>
+                                    <br>
+                                    Cenas e momentos: <text>Violento, Impactante, Sombrio</text>
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">   
+                            <div class="col-7">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control bg-dark border-dark text-white">
+                                    <option>Temporada 1</option>
+                                    <option>Temporada 2</option>
+                                    <option>Temporada 3</option>
+                                    <option>Temporada 4</option>
+                                    <option>Temporada 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <ul id="lista_eps"> 
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">2</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">3</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">4</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">5</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">6</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">7</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episódio</h6>
+                                            <p class="text-white">Um professor de química do ensino médio começa a vender drogas para sustentar sua família.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-2">
+                <img src="assets/Logonetflix.png" alt="logo">
+            </div>
+            <div class="col-8">
+                <ul class="menuList">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#netseries">Séries</a></li>
+                    <li><a href="#netfilmes">Filmes</a></li>
+                    <li><a href="#netrecentes">Mais recentes</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div id="hero" class="container-fluid">
+        <div class="container">
+            <div class="row" id="heroInfo">
+                <div class="col-5">
+                    <img class="logo" src="assets/breakingBad-logo.png">
+                    <p class="text-white">O professor de química Walter White não acredita que sua vida possa piorar ainda mais. 
+                        Quando descobre que tem câncer terminal, Walter decide arriscar tudo.</p>
+                    <br>
+                    <button class="btn btn-custom-white" data-bs-toggle="modal" data-bs-target="#modal-filme"><img src="assets/play_arrow.png" width="20px" style="margin-bottom: 2.5px;"> Assistir</button>
+                    <button class="btn btn-custom-translucent" data-bs-toggle="modal" data-bs-target="#modal-filme"><img src="assets/info.png" width="25px" style="margin-bottom: 2.5px;"> Mais informações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="netpopulares">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Populares da Netflix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="filmeLista">
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/Round-6.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2 temporadas
+                            <br>
+                            <text>violento · suspense no ar</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/advogadaExtraordinaria.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>16 episódios
+                            <br>
+                            <text>comovente · inspirador · drama</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/The-Office.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>9 temporadas
+                            <br>
+                            <text>inteligente · irreverente · sitcom </text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bastardos-inglorios.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 32min
+                            <br>
+                            <text>violento · irreverente · suspense de ação</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/strangerthings.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>4 temporadas<br>
+                            <text>sinistro · nostálgico · assustador</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/tropa de elite.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>1h 55min
+                            <br>
+                            <text>adrenalina pura · violente · suspense ação</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/nadadenovonofront.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 28min <br>
+                            <text>violento · sombrio · de época</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bettercallsaul.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>6 temporadas <br>
+                            <text>excêntrico · impactante · drama</text></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="netseries">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Séries premiadas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="filmeLista">
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/umbrella-academy.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>4 Temporadas
+                            <br>
+                            <text>chocante · exêntrico · peculiar</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bettercallsaul.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>6 temporadas <br>
+                            <text>excêntrico · impactante · drama</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/strangerthings.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>4 Temporadas
+                            <br>
+                            <text>sinistro · nostálgico · assustador</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/gambitorainha.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>Minissérie<br>
+                            <text>complexo · íntimo · drama</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/peakyblinders.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>6 Temporadas
+                            <br>
+                            <text>violento · de época · policiais vintage</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/The-Walking-Dead.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>11 temporadas
+                            <br>
+                            <text>distópico · sangrento · terror</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/dark.jpeg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>3 Temporadas
+                            <br>
+                            <text>chocante · arrepiante · presos no tempo</text></p>
+                        </div>
+                    </li>
+                    <li class="filme" data-bs-toggle="modal" data-bs-target="#modal-filme">
+                        <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>5 temporadas
+                            <br>
+                            <text>violento · impactante · sombrio</text></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="netfilmes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Filmes em destaque</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="filmeLista">
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bladeRunner.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 43min
+                            <br>
+                            <text>chocante · sombrio</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/minha-mae.jpeg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>1h 24min
+                            <br>
+                            <text>irreverente · comédia · conflito de gerações</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/naoolheparacima.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 28min
+                            <br>
+                            <text>inteligente · provocante · sci-fi e drama</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bohemianRhapsody.jpeg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 14min
+                            <br>
+                            <text>nostálgico · instigantes · música</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/jurassicWord.jpeg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 4min
+                            <br>
+                            <text>adrenalina pura · imaginativo · sci-fi e aventura</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/nao-naoolhe.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 10min
+                            <br>
+                            <text>suspense no ar · sci-fi com aliens · mundo épico</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/taxiDriver.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>1h 53min
+                            <br>
+                            <text>psicológico · impactante · filme noir</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/kongfupanda.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>1h 32min
+                            <br>
+                            <text>empolgantes · artes marciais · kong fu</text></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="netrecentes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Novidades no Netflix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="filmeLista">
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/nao-naoolhe.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 10min
+                            <br>
+                            <text>suspense no ar · sci-fi com aliens · mundo épico</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/naoolheparacima.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 10min
+                            <br>
+                            <text>suspense no ar · sci-fi com aliens · mundo épico</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/Round-6.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2 temporadas
+                            <br>
+                            <text>violento · suspense no ar</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/naoolheparacima.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 10min
+                            <br>
+                            <text>suspense no ar · sci-fi com aliens · mundo épico</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/bastardos-inglorios.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>2h 32min
+                            <br>
+                            <text>violento · irreverente · suspense de ação</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="assets/capas/kongfupanda.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>1h 32min
+                            <br>
+                            <text>empolgantes · artes marciais · kong fu</text></p>
+                        </div>
+                    </li>
+                    <li class="filme" data-bs-toggle="modal" data-bs-target="#modal-filme">
+                        <img class="img-fluid" src="assets/capas/breakingBad.jpg">
+                        <div class="filmeInfo">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <img src="assets/play_arrow.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/joinha-baixo.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <img src="assets/plus.png" width="15px" style="margin-bottom: 2.5px;">
+                                </a>
+                            </div>
+                            <p>5 temporadas
+                            <br>
+                            <text>violento · impactante · sombrio</text></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
